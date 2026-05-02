@@ -18,7 +18,7 @@ except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "plyer"])
     from plyer import notification
 
-st.set_page_config(page_title="IoT IDS/IPS Gateway", page_icon="🛡️", layout="wide")
+st.set_page_config(page_title="ML-Based IDS/IPS for IoT", page_icon="🛡️", layout="wide")
 
 st.markdown("""
     <style>
@@ -250,7 +250,7 @@ for k, v in defaults.items():
         st.session_state[k] = v
 
 # ── Title ─────────────────────────────────────────────────────────────────────
-st.title("🛡️ ML-Based IDS for Anomalous Traffic Detection")
+st.title("🛡️ ML-Based IDS/IPS for Anomalous Traffic Detection in Simulated IoT Environments")
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 sidebar = st.sidebar

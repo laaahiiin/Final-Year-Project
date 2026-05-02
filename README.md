@@ -1,4 +1,4 @@
-# AI-Powered IoT Intrusion Prevention System (IPS) Gateway
+# ML-Based IDS/IPS for Anomalous Traffic Detection in Simulated IoT Environments
 
 ![Dashboard Preview](https://img.shields.io/badge/Status-Final_Build-success?style=for-the-badge) ![Machine Learning](https://img.shields.io/badge/Model-Random_Forest_99%25-blue?style=for-the-badge) ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge)
 
