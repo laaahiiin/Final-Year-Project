@@ -155,8 +155,14 @@ def get_leaflet_html():
             <span class="legend-dot" style="background:rgb(255,140,0)"></span> BruteForce
         </div>
         <script>
-            // Initialize Map with Scroll Zoom enabled
-            var map = L.map('map', {zoomControl:true, attributionControl:false, scrollWheelZoom:true, dragging:true}).setView([20, 0], 2);
+            // Initialize Map with Scroll Zoom enabled and restrict zoom to prevent edge gaps
+            var map = L.map('map', {
+                zoomControl: true, 
+                attributionControl: false, 
+                scrollWheelZoom: true, 
+                dragging: true,
+                minZoom: 2 // Prevents zooming out too far (stops multiple worlds & gray bars)
+            }).setView([20, 0], 2);
             
             // English base tiles (Esri Dark Gray Base)
             L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
